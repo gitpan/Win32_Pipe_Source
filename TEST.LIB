@@ -1,0 +1,7 @@
+
+    $Server = Win32::NodeName() unless ($Server = $ARGV[0]);
+    $User   = Win32::LoginName();
+
+    $Pipe = "Test Pipe run by the user '$User'!";
+
+    1;
